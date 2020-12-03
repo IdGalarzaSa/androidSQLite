@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         // Validamos si existe ese registro
         if (c.getCount() > 0) {
 
+            c.moveToNext();
             // En caso de que exista el registro lo mostramos en los campos de texto
             String code = c.getString(c.getColumnIndex(ProductContract.ProductEntity.CODE));
             String description = c.getString(c.getColumnIndex(ProductContract.ProductEntity.DESCRIPTION));
